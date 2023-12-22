@@ -58,10 +58,10 @@ function validateMessage(){
     var required = 30;
     var msgLeft = required - message.length;
 
-    // if(message <= 0){
-    //     msgError.innerHTML = 'message required';
-    //     return false;
-    // }
+    if(message <= 0){
+        msgError.innerHTML = 'message required';
+        return false;
+    }
     
     if(msgLeft > 0){
         msgError.innerHTML = msgLeft + ' more characters left';
